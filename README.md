@@ -7,5 +7,5 @@ Requirements
 * Go 1.4.x or greater
 
 ## Installation
-    # Use go get to install checksum
-    go get github.com/souleiman/checksum
+    # Use go install to install checksum package
+    go install github.com/souleiman/checksum
