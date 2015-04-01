@@ -8,7 +8,7 @@ import (
 
 const chunk = 8196 // 8KB
 
-func compute_checksum(hash hash.Hash, filename string) ([]byte, error) {
+func Compute(hash hash.Hash, filename string) ([]byte, error) {
     hash.Reset() // Clear any previous hashsum [Useful if you are re-using)
 
     file, err := os.Open(filename)
