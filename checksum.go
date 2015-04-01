@@ -9,7 +9,7 @@ import (
 const chunk = 8196 // 8KB
 
 func Compute(hash hash.Hash, filename string) ([]byte, error) {
-    hash.Reset() // Clear any previous hashsum [Useful if you are re-using)
+    hash.Reset() // Clear any previous hashsum [Useful if you are re-using object)
 
     file, err := os.Open(filename)
     if err != nil {
